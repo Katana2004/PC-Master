@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mt-5">{{ t['welcome'] }}</h1>
+<p class="lead">Discover the best PCs for gaming, office, and more!</p>
+<img src="{{ url_for('static', filename='img/banner.jpg') }}" class="img-fluid rounded mt-3" alt="PC Master Banner">
+<a href="/products?lang={{ lang }}" class="btn btn-primary mt-3">{{ t['catalog'] }}</a>
+<div class="mt-4">
+    <a href="?lang=en">English</a> | <a href="?lang=de">Deutsch</a>
+</div>
+{% endblock %}
